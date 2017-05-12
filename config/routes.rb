@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   get 'home/index'
+<<<<<<< HEAD
   get 'home/booth'
   get 'home/ourevent'
+=======
+  root 'home#index'
+  get 'home/booth'
+>>>>>>> 7c43125d2f9d556e6a4b4ba1273a1010211c97cd
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
