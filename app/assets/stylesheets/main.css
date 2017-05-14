@@ -2478,8 +2478,8 @@ blockquote:before {
 	color: transparent;
 }
 .panel-title > a span:after {
-	font-family: "fontello";
-	content: "\e849";
+	font-family: "FontAwesome";
+	content: "\f063";
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -2498,7 +2498,7 @@ blockquote:before {
 	opacity: 0;
 }
 .panel-title > a.collapsed span:after {
-	content: "\e84c";
+	content: "\f062";
 }
 .text-center .panel-title > a:hover span:after {
 	color: #1ABB9C;
