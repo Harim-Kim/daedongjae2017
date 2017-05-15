@@ -3,4 +3,7 @@ class HomeController < ApplicationController
   end
   def booth
   end
+
+  def ourevent
+  end
 end
