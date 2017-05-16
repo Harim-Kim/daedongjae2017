@@ -1,0 +1,82 @@
+<main>
+
+	
+	<!-- ============================================================= SECTION – BLOG ============================================================= -->
+	
+	<section id="blog" class="light-bg">
+		<div class="container inner-top-sm inner-bottom">
+			
+			<div class="row inner-bottom-xs">
+				<div class="col-sm-12">	
+					<ul class="format-filter text-center">
+						<li><a class="active" href="#" data-filter="*" title="All" data-rel="tooltip" data-placement="top">all</a></li>
+						<li><a href="#" data-filter=".format-standard" title="First Day" data-rel="tooltip" data-placement="top">25일</a></li>
+						<li><a href="#" data-filter=".format-quote" title="Second Day" data-rel="tooltip" data-placement="top">26일</a></li>
+
+						<li><a href="#" data-filter=".format-image" title="Map Image" data-rel="tooltip" data-placement="top">지도</a></li>
+						
+						<li><a href="#" data-filter=".format-link" title="Link" data-rel="tooltip" data-placement="top">Link</a></li>
+					</ul><!-- /.format-filter -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<!--post 날짜별 내용-->
+                    <%@post_date.each do |p|%>
+                    	
+					<div class="grid-blog col-3 no-sidebar">
+						<div class="posts">
+							<%@post_all.each do |p|%>
+							<div class="post format-image">
+								
+								<div class="post-content">
+									
+									<figure class="icon-overlay icn-link post-media">
+										<a href="/home/event_view/:id"><%=image_tag "photograph04-lg.jpg"%></a>
+									</figure><!-- /.post-media -->
+									
+									<h2 class="post-title">
+										<a href="/home/event_view/:id"><%=p.title%></a>
+									</h2>
+									
+									<ul class="meta">
+										<li class="date">May <%=p.date%>, 2017</li>
+										<li class="categories">카테고리 <%=p.category%></li>
+										<li class="comments"><a href="#">n </a></li>
+										<li class="likes"><a href="#">m </a></li>
+									</ul><!-- /.meta -->
+									
+									<p><%=p.explain%></p>
+									
+									<a href="/home/event_view/:id" class="btn" style="float:right">자세히 보기</a>
+									
+								</div><!-- /.post-content --> 
+							</div><!-- /.post -->
+							<%end%>
+						</div><!-- /.posts -->
+                    
+					</div><!-- /.grid-blog -->
+					<%end%>
+					
+					<center>
+					<ul class="pagination">
+						<li><a href="#">Prev</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">Next</a></li>
+						
+					</ul>
+					</center><!-- /.pagination --> 
+					
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			
+		</div><!-- /.container -->
+	</section>
+	
+	<!-- ============================================================= SECTION – BLOG : END ============================================================= -->
+	
+</main>

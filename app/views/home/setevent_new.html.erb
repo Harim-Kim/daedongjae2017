@@ -1,0 +1,28 @@
+<style>
+    div{
+        margin-top: 30px;
+    }
+</style>
+
+<div class="container">
+    <form action="/home/setevent_create" method="post">
+        <div class="form-group">
+        기업이름 : <input type="text" class="form-control" id="title" name="title"  placeholder="기업이름">
+        날    짜 : <input type="text" class="form-control" id="date" name="date"  placeholder="날짜">
+        카테고리 : <input type="text" class="form-control" id="category" name="category"  placeholder="카테고리">
+        설    명 : <input type="text" class="form-control" id="explain" name="explain"  placeholder="설명">
+        내    용 : <textarea class="form-control" id="exampleTextarea" name="con" rows="3" placeholder="클릭하면 보이는 내용"></textarea>
+    
+        <br>
+        <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="inputPassword" placeholder="Password">
+      </div>
+        <!--코멘트 수, 라이크 수는 다른 데서 받아오기  -->
+        <button type="submit" class="btn btn-primary" style="">생성</button>
+    
+        <a href="/home/event">행사 페이지 홈</a>
+        </div>
+    </form>
+    
+</div>

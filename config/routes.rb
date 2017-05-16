@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
   get 'home/index'
+  
+  get 'home/event' => 'home#event'
+  get 'home/event_num/:date' => 'home#event_num'
+  get 'home/event_num/25' => 'home#event_num'
 
+  get 'home/event_view/:id' => 'home#event_view'
+  
+  get 'home/setevent_new'
+  post 'home/setevent_create' => 'home#setevent_create'
+  get 'home/setevent_destroy/:id' => 'home#destroy'
+  get 'home/setevent_list' => 'home#setevent_list'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
