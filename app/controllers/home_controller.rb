@@ -17,4 +17,12 @@ class HomeController < ApplicationController
   def importperform
   end
   
+
+  def event
+  end
+  
+
+
+  
+
 end
