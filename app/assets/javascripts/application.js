@@ -25,5 +25,4 @@
 //= require viewport-units-buggyfill
 
 
-//= require turbolinks
 //= require_tree .
