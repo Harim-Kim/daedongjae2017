@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     collection { post :importpub, :importperform,:importbooth }
   end
 
-  get 'home/event' => 'home#event'
+  get 'home/event' 
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
