@@ -8,7 +8,7 @@ class HomeController < ApplicationController
   end
   
   def event_num
-    #post_num = Post.all.lengh #???
+    #post_num = Post.all.lengh
     foo ||= []
     Post.all.each do |p|
       if p.date==params[:date]
