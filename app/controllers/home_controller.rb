@@ -5,10 +5,18 @@ class HomeController < ApplicationController
   
   def booth
   end
-<<<<<<< HEAD
+  
   def dbupload
   end
-=======
+  
+  def jujeomsave
+    Jujeom.import(params[:csv_file])
+    redirect_to '/home/dbupload', notice: "완료!"
+  end
+  
+  
+  
+  
   
   def ourevent
   end
@@ -31,5 +39,4 @@ class HomeController < ApplicationController
     render :event
   end
 
->>>>>>> 472fcccd1e2247da808dd540a45b43d040300d7d
 end
