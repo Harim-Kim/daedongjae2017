@@ -9,7 +9,8 @@ class HomeController < ApplicationController
   def ourevent
   end
  
-  
+  def event
+  end
   def performance
   end
   
@@ -22,6 +23,8 @@ class HomeController < ApplicationController
   def importperform
   end
   
-  def event
+  def show
+    render :event
   end
+
 end

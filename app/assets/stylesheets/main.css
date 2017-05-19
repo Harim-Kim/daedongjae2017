@@ -1348,7 +1348,7 @@ aside .thumb figure {
 }
 .navbar-brand img {
 	display: inline-block;
-	height: 40px;
+	height: 60px;
 }
 .navbar-brand img.animate {
 	-moz-transition: none;
@@ -5257,7 +5257,10 @@ input:focus:-ms-input-placeholder {
 	/*body {
 		height: 100vh;
 	}*/
-	
+	.logo{
+		width:110% !important;
+		height:150% !important;
+	}
 	h1,
 	h2,
 	h3,
