@@ -22,10 +22,6 @@ class HomeController < ApplicationController
   
   def importperform
   end
-  
-  def show
-    render :example
-  end
 
   def example
   end
