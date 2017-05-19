@@ -4,4 +4,7 @@ class HomeController < ApplicationController
   
   def performance
   end
+  
+  def example
+  end
 end
