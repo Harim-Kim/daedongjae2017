@@ -24,7 +24,9 @@ class HomeController < ApplicationController
   end
   
   def show
-    render :event
+    render :example
   end
 
+  def example
+  end
 end
