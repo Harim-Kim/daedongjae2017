@@ -3,4 +3,6 @@ class HomeController < ApplicationController
   end
   def booth
   end
+  def dbupload
+  end
 end
