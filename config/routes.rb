@@ -2,7 +2,19 @@ Rails.application.routes.draw do
   get 'home/index'
   root 'home#index'
   get 'home/booth'
+<<<<<<< HEAD
   get 'home/dbupload'
+=======
+  get 'home/ourevent'
+  get 'home/performance'
+  get '/csv' => 'home#csv'
+  resources :home do
+    collection { post :importpub, :importperform,:importbooth }
+  end
+
+  get 'home/event'  => 'home#event'
+ 
+>>>>>>> 472fcccd1e2247da808dd540a45b43d040300d7d
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
