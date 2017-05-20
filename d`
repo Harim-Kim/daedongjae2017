@@ -1,0 +1,73 @@
+[33mcommit 984df0b4b6c8b8280515364687ec8e45d0f3e8bf[m
+Author: ChoiJiMan <linuspauling@naver.com>
+Date:   Sun May 14 10:57:22 2017 +0000
+
+    jiman commit first
+
+[33mcommit dfbc18813d2753fa90a8a7443af8ed597c076c9e[m
+Merge: 71efb25 7c43125
+Author: haerang kim <gk7246@likelion.org>
+Date:   Fri May 12 13:06:18 2017 +0000
+
+    master merge
+
+[33mcommit 71efb254acae7b4a0e59ca4bad372776cb558d59[m
+Author: haerang kim <gk7246@likelion.org>
+Date:   Fri May 12 13:02:19 2017 +0000
+
+    ourevent fixed
+
+[33mcommit 7c43125d2f9d556e6a4b4ba1273a1010211c97cd[m
+Author: Harim Kim <yongkal2@yonsei.ac.kr>
+Date:   Fri May 12 12:39:37 2017 +0000
+
+    footer fixed
+
+[33mcommit ec1cf9ad6c61f329b543ba4b3d6581ca81f03209[m
+Author: Harim Kim <yongkal2@yonsei.ac.kr>
+Date:   Wed May 10 09:11:38 2017 +0000
+
+    before action
+
+[33mcommit 331f39dc443f72f4107f5b00e7e9ff4e1bcc5049[m
+Merge: 8dc1c22 3a2a478
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Wed May 10 07:37:52 2017 +0000
+
+    merge booth branch
+
+[33mcommit 8dc1c22be0abb25b3d84322cec55b51839229341[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Wed May 10 07:20:46 2017 +0000
+
+    a
+
+[33mcommit 36cc87b492d68eae566b9d3774fa26fcfbfa7eb9[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Tue May 9 15:36:03 2017 +0000
+
+    reload error fixed
+
+[33mcommit 3a2a4784859b9aa6e98a82c193a4bf1a2864bcb6[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Tue May 9 15:34:33 2017 +0000
+
+    booth added
+
+[33mcommit fb3ecac7dc3e0853c05790bd6ddefca731e039eb[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Mon May 8 04:21:35 2017 +0000
+
+    booth page added
+
+[33mcommit 6f767864af35f102a298a5962b61f9993d3d8c09[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Sun May 7 16:43:43 2017 +0000
+
+    template form
+
+[33mcommit a5a8bc1b062b556d50023f7c9b13ce2d5bcc121b[m
+Author: harim_kim <yongkal2@yonsei.ac.kr>
+Date:   Sun May 7 10:38:29 2017 +0000
+
+    initial_commit
