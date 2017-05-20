@@ -1,8 +1,9 @@
 class CreateJujeoms < ActiveRecord::Migration
   def change
     create_table :jujeoms do |t|
-
-
+      t.string :img_name
+      t.string :intro # 설명 
+      t.string :unit
       t.string :name
       t.string :day
       t.string :location

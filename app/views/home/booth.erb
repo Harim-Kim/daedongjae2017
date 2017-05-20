@@ -151,14 +151,13 @@
 			<div class="row inner-bottom-xs">
 				<div class="col-sm-12">	
 					<ul class="format-filter text-center">
-						<li><a class="active" href="#" data-filter="*" title="All" data-rel="tooltip" data-placement="top">all</a></li>
-						<li><a href="#" data-filter=".format-standard" title="Standard" data-rel="tooltip" data-placement="top">교육대</a></li>
-						<li><a href="#" data-filter=".format-image" title="Image" data-rel="tooltip" data-placement="top">컴과</a></li>
-						<li><a href="#" data-filter=".format-gallery" title="Gallery" data-rel="tooltip" data-placement="top">경영대</a></li>
-						<li><a href="#" data-filter=".format-video" title="Video" data-rel="tooltip" data-placement="top">경제</a></li>
-						<li><a href="#" data-filter=".format-audio" title="Audio" data-rel="tooltip" data-placement="top">Audio</a></li>
-						<li><a href="#" data-filter=".format-quote" title="Quote" data-rel="tooltip" data-placement="top">Quote</a></li>
-						<li><a href="#" data-filter=".format-link" title="Link" data-rel="tooltip" data-placement="top">Link</a></li>
+						<li><a class="active" href="#" data-filter="*" title="전부보기" data-rel="tooltip" data-placement="top">all |</a></li>
+
+						<% @unit_jujeom.each do |jj| %>
+
+						<li><a href="#" data-filter=".format-<%=jj.unit%>" title="<%=jj.unit%>" data-rel="tooltip" data-placement="top"><%=jj.unit%> |</a></li>
+						
+						<%end%>
 					</ul><!-- /.format-filter -->
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -169,385 +168,40 @@
 					<div class="grid-blog col-3 no-sidebar">
 						
 						<div class="posts">
-							
-							<div class="post format-image">
+							<% @all_jujeom.each do |j| %>
+
+							<div class="post format-<%=j.unit%>">
 								
 								<div class="post-content">
-									
 									<figure class="icon-overlay icn-link post-media">
 										<a href="blog-post.html"><%=image_tag "3.png"%></a>
 									</figure><!-- /.post-media -->
 									
 									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
+										<a href="blog-post.html"><%=j.name%></a>
 									</h2>
 									
 									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
+										<li class="date">주점 날짜 : <%=j.day%></li>
+										<li class="categories"><a href="#">부스위치 : <%=j.location%></a></li>
+										<li class="comments"><a href="#"><%=j.host%></a></li>
 										<li class="likes"><a href="#">114</a></li>
 									</ul><!-- /.meta -->
 									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
+									<p>주점소개</p>
 									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
+									<a href="blog-post.html" class="btn">둘러보기</a>
 								</div><!-- /.post-content --> 
 								
 							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-gallery">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-gallery">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
-							<div class="post format-image">
-								
-								<div class="post-content">
-									
-									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
-									</figure><!-- /.post-media -->
-									
-									<h2 class="post-title">
-										<a href="blog-post.html">The girl and the summerlight</a>
-									</h2>
-									
-									<ul class="meta">
-										<li class="date">May 10, 2015</li>
-										<li class="categories"><a href="#">Photography</a></li>
-										<li class="comments"><a href="#">63</a></li>
-										<li class="likes"><a href="#">114</a></li>
-									</ul><!-- /.meta -->
-									
-									<p>Magnis modipsae que lib voloratati andigen daepeditem quiate ut repore autem labor. Laceaque quia sitiorem restem non restibusaes es modis.</p>
-									
-									<a href="blog-post.html" class="btn">Read more</a>
-									
-								</div><!-- /.post-content --> 
-								
-							</div>
+							<% end %>
 
 
 
 
 						</div><!-- /.posts -->
 					</div><!-- /.grid-blog -->
-					
-					<ul class="pagination">
-						<li><a href="#">Prev</a></li>
-						<li class="active"><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">Next</a></li>
-					</ul><!-- /.pagination --> 
+					<!-- /.pagination --> 
 					
 				</div><!-- /.col -->
 			</div><!-- /.row -->

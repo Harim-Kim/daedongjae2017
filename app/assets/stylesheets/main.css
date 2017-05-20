@@ -3760,7 +3760,7 @@ input:focus:-ms-input-placeholder {
 	content: "";
 }
 .format-filter li a {
-	padding: 0 35px;
+	padding: 0 10px 0 0;
 }
 .classic-blog .meta {
 	margin-right: -5px;
@@ -3802,13 +3802,7 @@ input:focus:-ms-input-placeholder {
 .meta li.author-posts a:before {
 	content: "\27a6";
 }
-.meta li.comments a:before {
-	content: "\e718";
-}
-.meta li.comments a:after {
-	content: "Comments";
-	margin-left: 4px;
-}
+
 .meta li.likes a:before {
 	content: "\2665";
 }

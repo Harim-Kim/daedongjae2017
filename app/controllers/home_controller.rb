@@ -4,6 +4,8 @@ class HomeController < ApplicationController
   end
   
   def booth
+    @all_jujeom = Jujeom.all
+    @unit_jujeom = Jujeom.where("day==25").select(:unit).uniq
   end
   
   def dbupload
@@ -14,8 +16,8 @@ class HomeController < ApplicationController
     redirect_to '/home/dbupload', notice: "완료!"
   end
   
-  
-  
+  def partner
+  end
   
   
   def ourevent
