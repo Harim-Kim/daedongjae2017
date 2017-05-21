@@ -5,9 +5,9 @@
 
 	<div class="container">
 		<ul class="nav nav-tabs ">
-			<li class="active"><a  href="/home/event">25일</a></li>
+			<li ><a  href="/home/event" >25일</a></li>
 			
-			<li><a href="/home/event2">26일</a></li>
+			<li class="active"><a href="/home/event2">26일</a></li>
 			
 		</ul>
 	</div>
@@ -16,11 +16,12 @@
 			
 			<div class="row inner-bottom-xs">
 				<div class="col-sm-12">	
-				<%=image_tag "25_back.jpg", style:"width:inherit"%>
+                <%=image_tag "26_back.jpg", style:"width:inherit"%>
+
 					<ul class="format-filter text-center">
 						<li><a class="active" href="#" data-filter="*" title="전부보기" data-rel="tooltip" data-placement="top">all |</a></li>
 
-						<% @unit_back_25.each do |jj| %>
+						<% @unit_back_26.each do |jj| %>
 
 						<li><a href="#" data-filter=".format-<%=jj.unit%>" title="<%=jj.unit%>" data-rel="tooltip" data-placement="top"><%=jj.unit%> |</a></li>
 						
@@ -35,7 +36,7 @@
 					<div class="grid-blog col-3 no-sidebar">
 						
 						<div class="posts">
-							<% @back_25.each do |j| %>
+							<% @back_26.each do |j| %>
 
 							<div class="post format-<%=j.unit%>">
 								

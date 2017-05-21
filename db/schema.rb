@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170519130234) do
+ActiveRecord::Schema.define(version: 20170521152308) do
+
+  create_table "backs", force: :cascade do |t|
+    t.string   "img_name"
+    t.string   "intro"
+    t.string   "unit"
+    t.string   "name"
+    t.string   "day"
+    t.string   "location"
+    t.string   "host"
+    t.integer  "like",       default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "jujeomreplies", force: :cascade do |t|
     t.text     "content"

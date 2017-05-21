@@ -7,17 +7,16 @@ Rails.application.routes.draw do
   get 'home/dbupload'
   post 'home/filesave'
   post 'home/jujeomsave'
-
+  post 'home/backsave'
+  get 'home/booth2'
 
 
   get 'home/ourevent'
   get 'home/performance'
-  get 'home/event'  => 'home#event'
- 
-
   get 'home/example'
 
-  get 'home/event'  => 'home#event'
+  get 'home/event'
+  get 'home/event2'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

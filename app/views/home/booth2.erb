@@ -3,9 +3,9 @@
 	<section id="popular-posts" class="light-bg">
 		<div class="container">
 		<ul class="nav nav-tabs ">
-			<li class="active"><a  href="/home/booth" >25일</a></li>
+			<li><a  href="/home/booth" >25일</a></li>
 			
-			<li><a href="/home/booth2">26일</a></li>
+			<li class="active"><a href="/home/booth2" >26일</a></li>
 			
 		</ul>
 	</div>
@@ -158,11 +158,12 @@
 			
 			<div class="row inner-bottom-xs">
 				<div class="col-sm-12">	
-				<%=image_tag "25_booth.jpg", style:"width:inherit"%>
+			    <%=image_tag "26_booth.jpg", style:"width:inherit"%>
+
 					<ul class="format-filter text-center">
 						<li><a class="active" href="#" data-filter="*" title="전부보기" data-rel="tooltip" data-placement="top">all |</a></li>
 
-						<% @unit_jujeom.each do |jj| %>
+						<% @unit_jujeom_26.each do |jj| %>
 
 						<li><a href="#" data-filter=".format-<%=jj.unit%>" title="<%=jj.unit%>" data-rel="tooltip" data-placement="top"><%=jj.unit%> |</a></li>
 						
@@ -177,7 +178,7 @@
 					<div class="grid-blog col-3 no-sidebar">
 						
 						<div class="posts">
-							<% @all_jujeom.each do |j| %>
+							<% @jujeom_26.each do |j| %>
 
 							<div class="post format-<%=j.unit%>">
 								
