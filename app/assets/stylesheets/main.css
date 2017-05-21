@@ -1622,7 +1622,7 @@ aside .thumb figure {
 .btn {
     color: #FFF !important;
     background: #0067B3;
-    padding: 11px 20px 13px;
+    padding: 1px 20px 13px;
 	margin: 15px 0;
 	font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
@@ -1636,7 +1636,7 @@ aside .thumb figure {
     -o-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
     -webkit-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 20px;
     -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
     -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
     box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
@@ -4876,7 +4876,7 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (max-width: 1024px) {
-	
+
 	html {
 		overflow-x: hidden;
 	}
@@ -5090,7 +5090,7 @@ input:focus:-ms-input-placeholder {
 	
 	.navbar-header {
 		background: #FFF;
-	    padding: 25px 0;
+	    padding: 40px 0;
 	}
 	.btn.responsive-menu {
 	    display: table;
@@ -5195,6 +5195,10 @@ input:focus:-ms-input-placeholder {
 	.container {
 	    padding-right: 15px;
 	    padding-left: 15px;
+	}
+	.container{
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.tabs-side .etabs {
 	    width: 240px;
@@ -5905,6 +5909,11 @@ input:focus:-ms-input-placeholder {
 }
 
 @media (min-width: 768px) {
+
+	.container{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 	.modal-open {
 		margin-left: -17px;
 		margin-right: -17px;

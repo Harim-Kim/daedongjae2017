@@ -23,3 +23,12 @@
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
 }
+
+.btn-char{
+  font-size: 160%;
+  color: #fff;
+}
+
+.btn-color{
+  background : linear-gradient(#337ab7, #003B71),#003B71 !important;
+}
