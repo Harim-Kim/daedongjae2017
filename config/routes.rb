@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users
   get 'home/index'
   root 'home#index'
 
@@ -8,9 +10,9 @@ Rails.application.routes.draw do
   post 'home/filesave'
   post 'home/jujeomsave'
   post 'home/backsave'
+  post 'home/performdaesave'
+  post 'home/performjungsave'
   get 'home/booth2'
-
-
   get 'home/ourevent'
   get 'home/performance'
   get 'home/example'

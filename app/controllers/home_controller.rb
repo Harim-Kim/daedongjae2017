@@ -25,6 +25,14 @@ class HomeController < ApplicationController
     Back.import(params[:csv_file])
     redirect_to '/home/dbupload', notice: "완료!"
   end
+  def performdaesave
+    Performdae.import(params[:csv_file])
+    redirect_to '/home/dbupload', notice: "완료!"
+  end
+  def performjungsave
+    Performjung.import(params[:csv_file])
+    redirect_to '/home/dbupload', notice: "완료!"
+  end
   def partner
   end
   
@@ -43,6 +51,10 @@ class HomeController < ApplicationController
 
   end
   def performance
+    @perfordae_25 = Performdae.where("date==25")
+    @perfordae_26 = Performdae.where("date==26") 
+    @performjung_25 = Performjung.where("date==25")
+    @performjung_26 = Performjung.where("date==26")
   end
   
   def csv

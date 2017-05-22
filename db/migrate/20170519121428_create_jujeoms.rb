@@ -8,6 +8,7 @@ class CreateJujeoms < ActiveRecord::Migration
       t.string :day
       t.string :location
       t.string :host
+      t.string :img_url
       t.integer :like, :default => 0
       t.timestamps null: false
     end
