@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   post 'home/performdaesave'
   post 'home/performjungsave'
   get 'home/booth2'
-
+  get 'home/juju'
   
   get 'home/jujeomlike/:id' => 'home#jujeomlike'
 

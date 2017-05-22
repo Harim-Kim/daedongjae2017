@@ -8,13 +8,21 @@ class HomeController < ApplicationController
     @popular = @jujeom_25.order(like: :desc).first(8)
     @unit_jujeom = Jujeom.where("day==25").select(:unit).uniq
   end
-  
+   
   
   def booth2
     @jujeom_26 = Jujeom.where("day==26").order(:img_url)
     @popular = @jujeom_26.order(like: :desc).first(8)
     @unit_jujeom_26 = Jujeom.where("day==26").select(:unit).uniq
  
+  end
+  def juju
+    for i in 1...144
+      a=Jujeom.find(i)
+      if a.img_url==nil
+        a.img_url="3.png"
+      end
+    end
   end
   
   def dbupload
