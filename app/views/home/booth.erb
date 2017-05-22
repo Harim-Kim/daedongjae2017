@@ -25,118 +25,21 @@
 							<div id="content" class="panel-collapse">
 								<div class="panel-body">
 									<div id="owl-popular-posts" class="owl-carousel owl-item-gap-sm">
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Vintage Bicycles</h4>
-															<p>Interactive</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Simpli Nota</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Vinyl Records</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Astor & Yancy</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Signwall</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Tri Fold Brochure</h4>
-															<p>Print</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>Embroidered</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
-										<div class="item">
-											<a href="blog-post.html">
-												<figure>
-													<figcaption class="text-overlay">
-														<div class="info">
-															<h4>El Corcho</h4>
-															<p>Identity</p>
-														</div><!-- /.info -->
-													</figcaption>
-													<%= image_tag "3.png"%>
-												</figure>
-											</a>
-										</div><!-- /.item -->
-										
+										<%@popular.each do |p| %>
+											<div class="item">
+												<a href="blog-post.html">
+													<figure>
+														<figcaption class="text-overlay">
+															<div class="info">
+																<h4><%=p.name%></h4>
+																<p><%=p.like%> likes</p>
+															</div><!-- /.info -->
+														</figcaption>
+														<%= image_tag "3.png"%>
+													</figure>
+												</a>
+											</div><!-- /.item -->
+										<%end%>
 									</div><!-- /.owl-carousel -->
 								</div><!-- /.panel-body -->
 							</div><!-- /.content -->
@@ -194,7 +97,7 @@
 										<li class="date">주점 날짜 : <%=j.day%></li>
 										<li class="categories"><a href="#">부스위치 : <%=j.location%></a></li>
 										<li class="comments"><a href="#"><%=j.host%></a></li>
-										<li class="likes"><a href="#">114</a></li>
+										<li class="likes"><a href="/home/jujeomlike/<%=j.id%>"><%=j.like%></a></li>
 									</ul><!-- /.meta -->
 									
 									<p>주점소개</p>
