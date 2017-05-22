@@ -6,7 +6,7 @@ class CreatePerformjungs < ActiveRecord::Migration
       t.string :name
       t.string :intro
       t.string :date
-      t.string :img_url
+      t.string :img_url, :default =>"3.png"
       t.integer :like, :default => 0
       t.timestamps null: false
     end

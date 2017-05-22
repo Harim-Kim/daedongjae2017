@@ -8,7 +8,7 @@ class CreateBacks < ActiveRecord::Migration
       t.string :day
       t.string :location
       t.string :host
-      t.string :img_url
+      t.string :img_url, :default =>"3.png"
       t.integer :like, :default => 0
       t.timestamps null: false
     end
