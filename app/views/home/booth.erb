@@ -64,11 +64,8 @@
 				<%=image_tag "25_booth.jpg", style:"width:inherit"%>
 					<ul class="format-filter text-center">
 						<li><a class="active" href="#" data-filter="*" title="전부보기" data-rel="tooltip" data-placement="top">all |</a></li>
-
 						<% @unit_jujeom.each do |jj| %>
-
-						<li><a href="#" data-filter=".format-<%=jj.unit%>" title="<%=jj.unit%>" data-rel="tooltip" data-placement="top"><%=jj.unit%> |</a></li>
-						
+							<li><a href="#" data-filter=".format-<%=jj.unit%>" title="<%=jj.unit%>" data-rel="tooltip" data-placement="top"><%=jj.unit%> |</a></li>
 						<%end%>
 					</ul><!-- /.format-filter -->
 				</div><!-- /.col -->
@@ -80,7 +77,7 @@
 					<div class="grid-blog col-3 no-sidebar">
 						
 						<div class="posts">
-							<% @all_jujeom.each do |j| %>
+							<% @jujeom_25.each do |j| %>
 
 							<div class="post format-<%=j.unit%>">
 								
