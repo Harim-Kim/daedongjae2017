@@ -4,12 +4,15 @@ class HomeController < ApplicationController
   end
   
   def booth
-    @all_jujeom = Jujeom.all
     @jujeom_25 = Jujeom.where("day==25")
+    @popular = @jujeom_25.order(like: :desc).first(8)
     @unit_jujeom = Jujeom.where("day==25").select(:unit).uniq
-     end
+  end
+  
+  
   def booth2
     @jujeom_26 = Jujeom.where("day==26")
+    @popular = @jujeom_26.order(like: :desc).first(8)
     @unit_jujeom_26 = Jujeom.where("day==26").select(:unit).uniq
  
   end
@@ -21,6 +24,19 @@ class HomeController < ApplicationController
     Jujeom.import(params[:csv_file])
     redirect_to '/home/dbupload', notice: "완료!"
   end
+  
+  def jujeomlike
+    jujeom = Jujeom.find(params[:id])
+    jujeom.like += 1
+    jujeom.save
+    if jujeom.day == "26"
+      redirect_to '/home/booth2'
+    else
+      redirect_to '/home/booth'
+    end
+  end
+  
+  
   def backsave
     Back.import(params[:csv_file])
     redirect_to '/home/dbupload', notice: "완료!"

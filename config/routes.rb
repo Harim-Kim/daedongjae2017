@@ -13,10 +13,16 @@ Rails.application.routes.draw do
   post 'home/performdaesave'
   post 'home/performjungsave'
   get 'home/booth2'
+
+  
+  get 'home/jujeomlike/:id' => 'home#jujeomlike'
+
+
   get 'home/ourevent'
   get 'home/performance'
   get 'home/example'
 
+  
   get 'home/event'
   get 'home/event2'
   # The priority is based upon order of creation: first created -> highest priority.
