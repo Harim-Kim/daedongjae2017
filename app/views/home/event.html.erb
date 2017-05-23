@@ -28,7 +28,10 @@
 					</ul><!-- /.format-filter -->
 				</div><!-- /.col -->
 			</div><!-- /.row -->
-			 
+			
+			
+	<div class="container">   
+
 			<div class="row">
 				<div class="col-sm-12">
 					
@@ -38,26 +41,27 @@
 							<% @back_25.each do |j| %>
 
 							<div class="post format-<%=j.unit%>">
+
 								
 								<div class="post-content">
 									<figure class="icon-overlay icn-link post-media">
-										<a href="blog-post.html"><%=image_tag "3.png"%></a>
+										<a href="/home/event_spec/<%=j.id%>"><%=image_tag j.img_url%></a>
 									</figure><!-- /.post-media -->
 									
 									<h2 class="post-title">
-										<a href="blog-post.html"><%=j.name%></a>
+										<a href="/home/event_spec/<%=j.id%>"><%=j.name%></a>
 									</h2>
 									
 									<ul class="meta">
-										<li class="date">주점 날짜 : <%=j.day%></li>
-										<li class="categories"><a href="#">부스위치 : <%=j.location%></a></li>
+										<li class="date">행사 날짜 : <%=j.day%></li>
+										<li class="categories"><a href="#">행사위치 : <%=j.location%></a></li>
 										<li class="comments"><a href="#"><%=j.host%></a></li>
 										<li class="likes"><a href="#">114</a></li>
 									</ul><!-- /.meta -->
 									
-									<p>주점소개</p>
+									<p>행사소개</p>
 									
-									<a href="#" class="btn">둘러보기</a>
+									<a href="/home/event_spec/<%=j.id%>" class="btn">둘러보기</a>
 								</div><!-- /.post-content --> 
 								
 							</div>
@@ -68,7 +72,6 @@
 
 						</div><!-- /.posts -->
 					</div><!-- /.grid-blog -->
-					<!-- /.pagination --> 
 					
 				</div><!-- /.col -->
 			</div><!-- /.row -->

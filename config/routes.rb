@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'home/index'
   root 'home#index'
@@ -12,18 +13,26 @@ Rails.application.routes.draw do
   post 'home/performdaesave'
   post 'home/performjungsave'
   get 'home/booth2'
-  get 'home/jujeomimg'
-  
+  get 'home/juju'
+  get 'home/partner'
   get 'home/jujeomlike/:id' => 'home#jujeomlike'
-
-
+  get 'home/backback'
+  get 'home/performdae/:id'=> 'home#performdae'
+  get 'home/performjung/:id'=> 'home#performjung'
+  get 'home/performdaelike/:id' => 'home#performdaelike'
+  get 'home/performjunglike/:id' => 'home#performjunglike'
   get 'home/ourevent'
   get 'home/performance'
   get 'home/example'
-
+  get 'home/booth_spec/:id' => 'home#booth_spec'
   
   get 'home/event'
   get 'home/event2'
+  get '/csv' => 'home#csv'
+  get 'home/event_spec/:id' => 'home#event_spec'
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
