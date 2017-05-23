@@ -98,6 +98,12 @@ class HomeController < ApplicationController
     @back_26 = Back.where("day==26")
 
   end
+  
+  def event_spec
+    @one_event = Back.find(params[:id])
+  end
+  
+  
   def performance
     @perfordae_25 = Performdae.where("date==25")
     @perfordae_26 = Performdae.where("date==26") 

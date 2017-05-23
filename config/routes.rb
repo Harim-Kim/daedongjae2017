@@ -28,6 +28,11 @@ Rails.application.routes.draw do
   
   get 'home/event'
   get 'home/event2'
+  get '/csv' => 'home#csv'
+  get 'home/event_spec/:id' => 'home#event_spec'
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
