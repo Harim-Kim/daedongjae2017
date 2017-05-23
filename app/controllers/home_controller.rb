@@ -11,6 +11,11 @@ class HomeController < ApplicationController
  
   def event
   end
+  
+  def event_spec
+  end
+  
+  
   def performance
   end
   
