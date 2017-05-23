@@ -81,6 +81,14 @@ class HomeController < ApplicationController
     @performjung_25 = Performjung.where("date==25")
     @performjung_26 = Performjung.where("date==26")
   end
+  def backback
+    for i in 1...30
+      b = Back.find(i)
+      if b.img_url==nill
+        b.img_url="3.png"
+      end
+    end
+  end
   
   def csv
   end
