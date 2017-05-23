@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522171959) do
+ActiveRecord::Schema.define(version: 20170522163804) do
 
   create_table "backs", force: :cascade do |t|
     t.string   "img_name"
@@ -43,10 +43,10 @@ ActiveRecord::Schema.define(version: 20170522171959) do
     t.string   "day"
     t.string   "location"
     t.string   "host"
-    t.string   "img_url"
+    t.string   "img_url",    default: "3.png"
     t.integer  "like",       default: 0
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "performdaes", force: :cascade do |t|
@@ -71,11 +71,6 @@ ActiveRecord::Schema.define(version: 20170522171959) do
     t.integer  "like",       default: 0
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-  end
-
-  create_table "tests", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
