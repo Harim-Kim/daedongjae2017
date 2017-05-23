@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get 'home/index'
   root 'home#index'
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   post 'home/performjungsave'
   get 'home/booth2'
   get 'home/juju'
-  
+  get 'home/partner'
   get 'home/jujeomlike/:id' => 'home#jujeomlike'
 
 

@@ -59,6 +59,7 @@ class HomeController < ApplicationController
   end
   def partner
   end
+
   
   
   def ourevent

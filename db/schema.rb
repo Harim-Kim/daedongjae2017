@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(version: 20170522111729) do
     t.string   "day"
     t.string   "location"
     t.string   "host"
-    t.string   "img_url"
+    t.string   "img_url",    default: "3.png"
     t.integer  "like",       default: 0
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "jujeomreplies", force: :cascade do |t|
@@ -43,10 +43,10 @@ ActiveRecord::Schema.define(version: 20170522111729) do
     t.string   "day"
     t.string   "location"
     t.string   "host"
-    t.string   "img_url"
+    t.string   "img_url",    default: "3.png"
     t.integer  "like",       default: 0
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "performdaes", force: :cascade do |t|
@@ -67,17 +67,10 @@ ActiveRecord::Schema.define(version: 20170522111729) do
     t.string   "name"
     t.string   "intro"
     t.string   "date"
-    t.string   "img_url"
+    t.string   "img_url",    default: "3.png"
     t.integer  "like",       default: 0
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "tests", force: :cascade do |t|
-    t.string   "age"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
 end
