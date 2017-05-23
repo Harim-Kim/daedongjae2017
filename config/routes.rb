@@ -17,14 +17,14 @@ Rails.application.routes.draw do
   get 'home/partner'
   get 'home/jujeomlike/:id' => 'home#jujeomlike'
   get 'home/backback'
-  get 'home/perfomdae/:id'=> 'home#performdae'
-  get 'home/perfomjung/:id'=> 'home#performjung'
+  get 'home/performdae/:id'=> 'home#performdae'
+  get 'home/performjung/:id'=> 'home#performjung'
   get 'home/performdaelike/:id' => 'home#performdaelike'
   get 'home/performjunglike/:id' => 'home#performjunglike'
   get 'home/ourevent'
   get 'home/performance'
   get 'home/example'
-
+  get 'home/booth_spec/:id' => 'home#booth_spec'
   
   get 'home/event'
   get 'home/event2'

@@ -18,7 +18,7 @@
 									
 									<div class="date-wrapper">
 										<div class="date">
-											<span class="day"><%=@one_event.day%></span>
+											<span class="day"><%=@one_booth.day%></span>
 											<span class="month">May</span>
 										</div><!-- /.date -->
 									</div><!-- /.date-wrapper -->
@@ -31,7 +31,7 @@
 											
 											<div class="item">
 												<figure>
-													<img src="http://www.tourandong.com/_cs_file_/board/7B0E9ABD-41A0-4D77-B2DA-B8BCD3F5F01F/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0%ED%96%89%EC%82%AC%EC%82%AC%EC%A7%84.JPG" alt="">
+												    <%=image_tag @one_booth.img_url%>
 												</figure>
 											</div><!-- /.item -->
 											
@@ -39,11 +39,12 @@
 											
 										</div><!-- /.owl-carousel -->
 										
-										<h1 class="post-title"><%=@one_event.host%></h1>
-										<h2><%=@one_event.name%></h2>
+										<h1 class="post-title"><%=@one_booth.host%></h1>
+										<h2><%=@one_booth.name%></h2>
 										<ul class="meta">
-											<li class="categories">부스위치 : <%=@one_event.location%></li>
-											<li class="comment"><a href="/home/event">목록으로</a></li>
+											<li class="categories">부스위치 : <%=@one_booth.location%></li>
+											<li class="likes"><%=@one_booth.like%></a></li>
+											<li class="comment"><a href="/home/booth">목록으로</a></li>
 										</ul><!-- /.meta -->
 										
 										

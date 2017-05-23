@@ -16,6 +16,9 @@ class HomeController < ApplicationController
     @unit_jujeom_26 = Jujeom.where("day==26").select(:unit).uniq
  
   end
+  def booth_spec
+    @one_booth = Jujeom.find(params[:id])
+  end
   def juju
     for i in 1...144
       a=Jujeom.find(i)
