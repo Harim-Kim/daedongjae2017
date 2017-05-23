@@ -34,6 +34,13 @@
 												    <%=image_tag @one_booth.img_url%>
 												</figure>
 											</div><!-- /.item -->
+											<% @booth_specimg.each do |b|%>
+											<div class="item">
+												<figure>
+													<%=image_tag b%>
+												</figure>
+											</div>
+											<%end%>
 											
 											
 											

@@ -18,6 +18,7 @@ class HomeController < ApplicationController
   end
   def booth_spec
     @one_booth = Jujeom.find(params[:id])
+    @booth_specimg = @one_booth.img_name.split('/')
   end
   def juju
     for i in 1...144
@@ -26,6 +27,14 @@ class HomeController < ApplicationController
         a.img_url="3.png"
       end
     end
+  end
+  def juju2
+    for i in 1...144
+      a=Jujeom.find(i)
+      a.img_name="3.png"
+      a.save
+    end
+    redirect_to "home/booth"
   end
   
   def dbupload
