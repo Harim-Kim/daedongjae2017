@@ -84,10 +84,12 @@ class HomeController < ApplicationController
   def backback
     for i in 1...30
       b = Back.find(i)
-      if b.img_url==nill
+      if b.img_url==nil
         b.img_url="3.png"
+        b.save
       end
     end
+    redirect_to "/home/event"
   end
   
   def csv

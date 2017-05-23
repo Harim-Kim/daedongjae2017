@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get 'home/juju'
   get 'home/partner'
   get 'home/jujeomlike/:id' => 'home#jujeomlike'
-  get 'backback'
+  get 'home/backback'
 
   get 'home/ourevent'
   get 'home/performance'
