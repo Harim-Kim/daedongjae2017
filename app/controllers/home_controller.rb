@@ -57,6 +57,29 @@ class HomeController < ApplicationController
     Performjung.import(params[:csv_file])
     redirect_to '/home/dbupload', notice: "완료!"
   end
+  def performdae
+    @one_performdae = Performdae.find(params[:id])
+    @a = @one_performdae.start.split(':')
+    @b =@a[1].to_i+20
+
+  end
+  def performjung
+    @one_performjung = Performjung.find(params[:id])
+    @a = @one_performjung.start.split(':')
+    @b =@a[1].to_i+20
+  end
+  def performjunglike
+    perform = Performjung.find(params[:id])
+    perform.like+=1
+    perform.save
+    redirect_to :back
+  end
+  def performdaelike
+    perform = Performdae.find(params[:id])
+    perform.like+=1
+    perform.save
+    redirect_to :back
+  end
   def partner
   end
 

@@ -1,0 +1,41 @@
+<section id="blog" class="light-bg">
+		<div class="container inner-top-sm inner-bottom classic-blog">
+			<div class="row">
+				
+				<div class="col-md-9 inner-right-sm">
+					
+					<div class="posts sidemeta">
+						<div class="post format-image">
+							
+							<div class="date-wrapper">
+								<div class="date">
+									<span class="day"><%=@one_performjung.date%></span>
+									<span class="month">May</span>
+								</div><!-- /.date -->
+							</div><!-- /.date-wrapper -->
+							
+							<div class="post-content">
+								<figure class="icon-overlay icn-link post-media">
+									<img src="http://cfile4.uf.tistory.com/image/27337B3653B645BC27DAE7" width="450" height="281" alt="">
+								</figure><!-- /.post-media -->
+								
+								<h2 class="post-title">
+									<%=@one_performjung.name%>
+								</h2>
+								
+								<ul class="meta">
+									<li class="categories"><a href="#"><%=@one_performjung.intro%></a></li>
+									<li class="comments"><a href="#">63</a></li>
+									<li class="likes"><a href="#"><%=@one_performjung.like%></a></li>
+								</ul><!-- /.meta -->
+								
+								<p>공연시간 : <%=@one_performjung.start%> ~ <%=@a[0]%>:<%=@b%></p>
+								<p>위치 : 대운동장</p>
+								<a href="/home/performjunglike/<%=@one_performjung.id%>" class="btn">Like</a>
+							</div><!-- /.post-content --> 
+							
+						</div><!-- /.post -->
+						
+						
+					</div><!-- /.posts -->
+</section>
