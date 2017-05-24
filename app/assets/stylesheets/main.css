@@ -20,7 +20,12 @@ Demo URI: 		http://demo.fuviz.com/reen
 :focus {
     outline: 0 !important;
 }
-
+.partner{
+	margin-bottom:20px;
+}
+.partner>p{
+	text-align: center;
+}
 figure {
     margin: 0;
     padding: 0;
